@@ -1,0 +1,86 @@
+body {
+    background-image: url(/Users/keshavs/Desktop/Project2024/background_pages.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: #333;
+    width: 50%;
+    margin: 0 auto;
+  }
+  h2 {
+    color: white;
+    text-align: center;
+  }
+  input[type="text"],input[type="email"],textarea,select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: beige;
+  }
+  input[type="text"]:hover,input[type="email"]:hover,textarea:hover,select:hover{
+    background-color: rgba(90,90,90,0.5);
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    border: #ccc;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+  }
+  input[type="reset"] {
+    background-color: red;
+    border: #ccc;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+  }
+  #buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  h3{
+    color: white;
+  }
+  input[type=button]{
+    background-color: orangered;
+    border: #ccc;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 20px;
+  }
+  form{
+    background-image: url(/Users/keshavs/Desktop/Project2024/form_bgm4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  label{
+    color: white;
+  }

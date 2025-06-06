@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Vimal">
+  <title>Document</title>
+  <style>
+    body {
+      background-image: url(/Users/keshavs/Desktop/Project2024/background_pages.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    form {
+      background-image: url(/Users/keshavs/Desktop/Project2024/form_bgm_donate.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 20px;
+      border-radius: 7px;
+      box-shadow: #333;
+      width: 50%;
+      margin: 0 auto;
+    }
+    h2 {
+      color: white;
+      text-align: center;
+    }
+    label {
+      color: white;
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: orangered;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 20px;
+    }
+    input:hover{
+      background-color: #333;
+    }
+    input[type="submit"]:hover{
+      background-color: orange;
+    }
+  </style>
+  <script>
+    function onFocus(input){
+      input.style.background="black";
+      input.style.color="white";
+    }
+    function onBlur(input){
+      input.style.color="orangered";
+      input.style.background="beige";
+    }
+    function validateFields(){
+      var email=document.getElementById("email").value;
+      atpos=email.indexOf("@");
+      dotpos=email.indexOf(".");
+      if(atpos<1||(dotpos-atpos)<2){
+          document.getElementById("email").value=null;
+          alert("Invalid Email!!");
+      }
+      if(document.getElementById("name").validity.valueMissing){
+        alert("Please enter your name");
+      }
+      if(document.getElementById("email").validity.valueMissing){
+        alert("Please enter your email");
+      }
+      if(document.getElementById("phone").validity.valueMissing){
+        alert("Please enter your phone number");
+      }
+      if(document.getElementById("phone").validity.patternMismatch){
+        alert("Please enter your phone number");
+      }
+      if(document.getElementById("address").validity.valueMissing){
+        alert("Please Enter your address");
+      }
+      if(document.getElementById("nationality").validity.valueMissing){
+        alert("Please Enter your nationality");
+      }
+      if(document.getElementById("amount").validity.valueMissing){
+        alert("Please Enter the donation amount");
+      }
+      if(document.getElementById("currency").validity.valueMissing){
+        alert("Please choose the currency");
+      }
+      if(document.getElementById("payment").validity.valueMissing){
+        alert("Please Enter your payment mode");
+      }
+      if(document.getElementById("frequency").validity.valueMissing){
+        alert("Please Enter your donation frequency");
+      }
+      var amount=document.getElementById("amount").value;
+      if(amount<0){
+        document.getElementById("amount").value=null;
+        alert("Amount cant be negative!");
+      }
+    }
+    function onSubmit(){
+      alert("Thank you for coming forward to donate for a noble cause!!");
+    }
+    function onCancel(){
+      alert("Spare a penny,Save a Life!!");
+      window.history.back();
+    }
+  </script>
+</head>
+<body>
+  <form onsubmit="onSubmit()">
+    <h2>Donation Form</h2>
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" onfocus="onFocus(this)" onblur="onBlur(this)" pattern="[+91]{3}[0-9]{10}" required><br>
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" onfocus="onFocus(this)" onblur="onBlur(this)" required></textarea><br>
+    <label for="nationality">Nationality:</label><br>
+    <select id="nationality" name="nationality" onfocus="onFocus(this)" onblur="onBlur(this)" required>
+      <option value="afghanistan">Afghanistan</option>
+      <option value="albania">Albania</option>
+      <option value="algeria">Algeria</option>
+      <option value="andorra">Andorra</option>
+      <option value="angola">Angola</option>
+      <option value="argentina">Argentina</option>
+      <option value="armenia">Armenia</option>
+      <option value="australia">Australia</option>
+      <option value="austria">Austria</option>
+      <option value="azerbaijan">Azerbaijan</option>
+      <option value="bahamas">Bahamas</option>
+      <option value="bahrain">Bahrain</option>
+      <option value="bangladesh">Bangladesh</option>
+      <option value="barbados">Barbados</option>
+      <option value="belarus">Belarus</option>
+      <option value="belgium">Belgium</option>
+      <option value="belize">Belize</option>
+      <option value="benin">Benin</option>
+      <option value="bhutan">Bhutan</option>
+      <option value="bolivia">Bolivia</option>
+      <option value="bosnia">Bosnia and Herzegovina</option>
+      <option value="botswana">Botswana</option>
+      <option value="brazil">Brazil</option>
+      <option value="brunei">Brunei</option>
+      <option value="bulgaria">Bulgaria</option>
+      <option value="burkina_faso">Burkina Faso</option>
+      <option value="burundi">Burundi</option>
+      <option value="cambodia">Cambodia</option>
+      <option value="cameroon">Cameroon</option>
+      <option value="canada">Canada</option>
+      <option value="cape_verde">Cape Verde</option>
+      <option value="central_african_republic">Central African Republic</option>
+      <option value="chad">Chad</option>
+      <option value="chile">Chile</option>
+      <option value="china">China</option>
+      <option value="colombia">Colombia</option>
+      <option value="comoros">Comoros</option>
+      <option value="congo">Congo</option>
+      <option value="costa_rica">Costa Rica</option>
+      <option value="croatia">Croatia</option>
+      <option value="cuba">Cuba</option>
+      <option value="cyprus">Cyprus</option>
+      <option value="czech_republic">Czech Republic</option>
+      <option value="denmark">Denmark</option>
+      <option value="djibouti">Djibouti</option>
+      <option value="dominica">Dominica</option>
+      <option value="dominican_republic">Dominican Republic</option>
+      <option value="east_timor">East Timor</option>
+      <option value="ecuador">Ecuador</option>
+      <option value="egypt">Egypt</option>
+      <option value="el_salvador">El Salvador</option>
+      <option value="equatorial_guinea">Equatorial Guinea</option>
+      <option value="eritrea">Eritrea</option>
+      <option value="estonia">Estonia</option>
+      <option value="eswatini">Eswatini</option>
+      <option value="ethiopia">Ethiopia</option>
+      <option value="fiji">Fiji</option>
+      <option value="finland">Finland</option>
+      <option value="france">France</option>
+      <option value="gabon">Gabon</option>
+      <option value="gambia">Gambia</option>
+      <option value="georgia">Georgia</option>
+      <option value="germany">Germany</option>
+      <option value="ghana">Ghana</option>
+      <option value="greece">Greece</option>
+      <option value="grenada">Grenada</option>
+      <option value="guatemala">Guatemala</option>
+      <option value="guinea">Guinea</option>
+      <option value="guinea_bissau">Guinea-Bissau</option>
+      <option value="guyana">Guyana</option>
+      <option value="haiti">Haiti</option>
+      <option value="honduras">Honduras</option>
+      <option value="hungary">Hungary</option>
+      <option value="iceland">Iceland</option>
+      <option value="india">India</option>
+      <option value="indonesia">Indonesia</option>
+      <option value="iran">Iran</option>
+      <option value="iraq">Iraq</option>
+      <option value="ireland">Ireland</option>
+      <option value="israel">Israel</option>
+      <option value="italy">Italy</option>
+      <option value="jamaica">Jamaica</option>
+      <option value="japan">Japan</option>
+      <option value="jordan">Jordan</option>
+      <option value="kazakhstan">Kazakhstan</option>
+      <option value="kenya">Kenya</option>
+      <option value="kiribati">Kiribati</option>
+      <option value="korea_north">North Korea</option>
+      <option value="korea_south">South Korea</option>
+      <option value="kuwait">Kuwait</option>
+      <option value="kyrgyzstan">Kyrgyzstan</option>
+      <option value="laos">Laos</option>
+      <option value="latvia">Latvia</option>
+      <option value="lebanon">Lebanon</option>
+      <option value="lesotho">Lesotho</option>
+      <option value="liberia">Liberia</option>
+      <option value="libya">Libya</option>
+      <option value="liechtenstein">Liechtenstein</option>
+      <option value="lithuania">Lithuania</option>
+      <option value="luxembourg">Luxembourg</option>
+      <option value="madagascar">Madagascar</option>
+      <option value="malawi">Malawi</option>
+      <option value="malaysia">Malaysia</option>
+      <option value="maldives">Maldives</option>
+      <option value="mali">Mali</option>
+      <option value="malta">Malta</option>
+      <option value="marshall_islands">Marshall Islands</option>
+      <option value="mauritania">Mauritania</option>
+      <option value="mauritius">Mauritius</option>
+      <option value="mexico">Mexico</option>
+      <option value="micronesia">Micronesia</option>
+      <option value="moldova">Moldova</option>
+      <option value="monaco">Monaco</option>
+      <option value="mongolia">Mongolia</option>
+      <option value="montenegro">Montenegro</option>
+      <option value="morocco">Morocco</option>
+      <option value="mozambique">Mozambique</option>
+      <option value="myanmar">Myanmar</option>
+      <option value="namibia">Namibia</option>
+      <option value="nauru">Nauru</option>
+      <option value="nepal">Nepal</option>
+      <option value="netherlands">Netherlands</option>
+      <option value="new_zealand">New Zealand</option>
+      <option value="nicaragua">Nicaragua</option>
+      <option value="niger">Niger</option>
+      <option value="nigeria">Nigeria</option>
+      <option value="north_macedonia">North Macedonia</option>
+      <option value="norway">Norway</option>
+      <option value="oman">Oman</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="palau">Palau</option>
+      <option value="panama">Panama</option>
+      <option value="papua_new_guinea">Papua New Guinea</option>
+      <option value="paraguay">Paraguay</option>
+      <option value="peru">Peru</option>
+      <option value="philippines">Philippines</option>
+      <option value="poland">Poland</option>
+      <option value="portugal">Portugal</option>
+      <option value="qatar">Qatar</option>
+      <option value="romania">Romania</option>
+      <option value="russia">Russia</option>
+      <option value="rwanda">Rwanda</option>
+      <option value="saint_kitts_and_nevis">Saint Kitts and Nevis</option>
+      <option value="saint_lucia">Saint Lucia</option>
+      <option value="saint_vincent_and_the_grenadines">Saint Vincent and the Grenadines</option>
+      <option value="samoa">Samoa</option>
+      <option value="san_marino">San Marino</option>
+      <option value="sao_tome_and_principe">Sao Tome and Principe</option>
+      <option value="saudi_arabia">Saudi Arabia</option>
+      <option value="senegal">Senegal</option>
+      <option value="serbia">Serbia</option>
+      <option value="seychelles">Seychelles</option>
+      <option value="sierra_leone">Sierra Leone</option>
+      <option value="singapore">Singapore</option>
+      <option value="slovakia">Slovakia</option>
+      <option value="slovenia">Slovenia</option>
+      <option value="solomon_islands">Solomon Islands</option>
+      <option value="somalia">Somalia</option>
+      <option value="south_africa">South Africa</option>
+      <option value="south_sudan">South Sudan</option>
+      <option value="spain">Spain</option>
+      <option value="sri_lanka">Sri Lanka</option>
+      <option value="sudan">Sudan</option>
+      <option value="suriname">Suriname</option>
+      <option value="sweden">Sweden</option>
+      <option value="switzerland">Switzerland</option>
+      <option value="syria">Syria</option>
+      <option value="taiwan">Taiwan</option>
+      <option value="tajikistan">Tajikistan</option>
+      <option value="tanzania">Tanzania</option>
+      <option value="thailand">Thailand</option>
+      <option value="togo">Togo</option>
+      <option value="tonga">Tonga</option>
+      <option value="trinidad_and_tobago">Trinidad and Tobago</option>
+      <option value="tunisia">Tunisia</option>
+      <option value="turkey">Turkey</option>
+      <option value="turkmenistan">Turkmenistan</option>
+      <option value="tuvalu">Tuvalu</option>
+      <option value="uganda">Uganda</option>
+      <option value="ukraine">Ukraine</option>
+      <option value="united_arab_emirates">United Arab Emirates</option>
+      <option value="united_kingdom">United Kingdom</option>
+      <option value="united_states">United States</option>
+      <option value="uruguay">Uruguay</option>
+      <option value="uzbekistan">Uzbekistan</option>
+      <option value="vanuatu">Vanuatu</option>
+      <option value="vatican_city">Vatican City</option>
+      <option value="venezuela">Venezuela</option>
+      <option value="vietnam">Vietnam</option>
+      <option value="yemen">Yemen</option>
+      <option value="zambia">Zambia</option>
+      <option value="zimbabwe">Zimbabwe</option>
+    </select><br>
+    <label for="amount">Donation Amount:</label><br>
+    <input type="number" id="amount" name="amount" min="1" step="any" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+    <label for="Currency">Currency:</label><br>
+    <select id="Curency" name="Currency" onfocus="onFocus(this)" onblur="onBlur(this)" required>
+      <option value="usd">United States Dollar (USD)</option>
+      <option value="eur">Euro (EUR)</option>
+      <option value="gbp">British Pound (GBP)</option>
+      <option value="jpy">Japanese Yen (JPY)</option>
+      <option value="aud">Australian Dollar (AUD)</option>
+      <option value="inr">Indian Rupee (INR)</option>
+      <option value="cny">Chinese Yuan (CNY)</option>
+      <option value="brl">Brazilian Real (BRL)</option>
+      <option value="cad">Canadian Dollar (CAD)</option>
+      <option value="idr">Indonesian Rupiah (IDR)</option>
+      <option value="mxn">Mexican Peso (MXN)</option>
+      <option value="rub">Russian Ruble (RUB)</option>
+      <option value="zar">South African Rand (ZAR)</option>
+      <option value="try">Turkish Lira (TRY)</option>
+      <option value="krw">South Korean Won (KRW)</option>
+      <option value="egp">Egyptian Pound (EGP)</option>
+      <option value="ars">Argentine Peso (ARS)</option>
+      <option value="thb">Thai Baht (THB)</option>
+      <option value="vnd">Vietnamese Dong (VND)</option>
+      <option value="ngn">Nigerian Naira (NGN)</option>
+    </select><br>
+    <label for="payment">Payment Method:</label><br>
+    <select id="payment" name="payment" onfocus="onFocus(this)" onblur="onBlur(this)" required>
+      <option value="credit_card">Credit Card</option>
+      <option value="debit_card">Debit Card</option>
+      <option value="paypal">PayPal</option>
+      <option value="bank_transfer">Bank Transfer</option>
+      <option value="bitcoin">Bitcoin</option>
+      <option value="ethereum">Ethereum</option>
+    </select><br>
+    <label for="frequency">Donation Frequency:</label><br>
+    <select id="frequency" name="frequency" onfocus="onFocus(this)" onblur="onBlur(this)" required>
+      <option value="one_time">One Time</option>
+      <option value="monthly">Monthly</option>
+      <option value="yearly">Yearly</option>
+    </select><br>
+    <input type="submit" value="Submit" onclick="validateFields()">
+    <input type="button" value="Cancel" onclick="onCancel()">
+    </body>
+  </html>

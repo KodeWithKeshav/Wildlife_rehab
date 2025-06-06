@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(/Users/keshavs/Desktop/Project2024/PICTURES/volunteer/volunteer2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color:green;
+    opacity: 0.9;
+    padding: 20px;
+}
+
+.head_content {
+    display: flex;
+    align-content: center;
+}
+.image{
+    align-items: flex-start;
+}
+.content{
+    align-self:center;
+    padding-left: 200px ;
+}
+
+#logo {
+    margin-right: 0px;
+    width: 300px;
+    height: 150px;
+}
+
+h1 {
+    margin: 0;
+}
+.center_align{
+    text-align: center;
+}
+.left_align{
+    text-align: left;
+}
+
+nav {
+    background-color: black;
+}
+
+.nav_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav_list li {
+    padding: 10px 20px;
+    width: 200px;
+    height: 20px;
+}
+
+.nav_list li a {
+    color: white;
+    text-decoration: none;
+}
+.nav_list li a:hover {
+    color: white;
+    text-decoration: none;
+    color: orangered;
+}
+
+.drop_down {
+    display: none;
+    position:absolute;
+    background-color: black;
+    opacity: 0.9;
+    list-style-type: none;
+}
+
+.nav_list li:hover .drop_down {
+    display: block;
+}
+
+#container {
+    padding: 20px;
+    background-color: rgba(50,50,50,0.8);
+    color: white;
+}
+
+.volunteer_form {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.volunteer_form:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}

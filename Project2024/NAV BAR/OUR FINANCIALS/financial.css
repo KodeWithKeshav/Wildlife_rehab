@@ -1,0 +1,159 @@
+body {
+    background-color: beige;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-image: url(/Users/keshavs/Desktop/Project2024/background_pages.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    padding: 1px;
+}
+
+.head_content {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.image{
+    align-items: flex-start;
+}
+.content{
+    align-self:center;
+    padding-left: 200px;
+    color: orangered;
+}
+
+#logo {
+    margin-right: 0px;
+    width: 300px;
+    height: 150px;
+}
+
+h1 {
+    margin: 0;
+}
+.center_align{
+    text-align: center;
+}
+.left_align{
+    text-align: left;
+}
+
+nav {
+    background-color: goldenrod;
+}
+
+.nav_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav_list li {
+    padding: 10px 20px;
+    width: 200px;
+    height: 20px;
+}
+
+.nav_list li a {
+    color: white;
+    text-decoration: none;
+}
+.nav_list li a:hover {
+    color: white;
+    text-decoration: none;
+    color: orangered;
+}
+
+.drop_down {
+    display: none;
+    position:absolute;
+    background-color: black;
+    opacity: 0.9;
+    list-style-type: none;
+}
+
+.nav_list li:hover .drop_down {
+    display: block;
+}
+h3{
+    text-align: center;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.row1 p{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.row4{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100%;
+}
+.row3 h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ele{
+    padding: 7px;
+    margin: 5px;
+}
+.row4 a{
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    color:green;
+
+}
+.row4 a:hover{
+    color: orange;
+}
+.row2{
+    align-self: center;
+}
+table,th,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    width: 60%;
+    border-radius: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.row5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 3px;
+}
+th{
+    background-color: #ccc;
+}
+.glow{
+    background-color: #cbd;
+    color:black;
+}
+.glow:hover{
+    background-color: palevioletred;
+}
+caption{
+    font-weight: 600;
+    color: blue;
+}

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-image: url(/Users/keshavs/Desktop/Project2024/background_pages.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px;
+}
+.head_contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.image{
+    align-items: flex-start;
+}
+#logo {
+    margin-right: 0px;
+    width: 300px;
+    height: 150px;
+}
+
+h1 {
+    margin: 0;
+}
+.center_align{
+    text-align: center;
+}
+.left_align{
+    text-align: left;
+}
+
+nav {
+    background-color: goldenrod;
+}
+
+.nav_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav_list li {
+    padding: 10px 20px;
+    width: 200px;
+    height: 20px;
+}
+
+.nav_list li a {
+    color: white;
+    text-decoration: none;
+}
+.nav_list li a:hover {
+    color: white;
+    text-decoration: none;
+    color: orangered;
+}
+
+.drop_down {
+    display: none;
+    position:absolute;
+    background-color: black;
+    opacity: 0.9;
+    list-style-type: none;
+}
+
+.nav_list li:hover .drop_down {
+    display: block;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    background-image: url(/Users/keshavs/Desktop/Project2024/PICTURES/NAVBAR/OURIMPACT/OUR-IMPACT_BG.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-left: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.heading{
+    align-self: center;
+}
+.element{
+    width: 25%;
+    padding: 9px;
+}
+.size{
+    width: 300px;
+    height: 100px;
+}

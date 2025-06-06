@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/Users/keshavs/Desktop/Project2024/PICTURES/Projects/rhino.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    padding: 1px;
+}
+
+.head_content {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.image{
+    align-items: flex-start;
+}
+.content{
+    align-self:center;
+    padding-left: 200px;
+    color: white;
+}
+
+#logo {
+    margin-right: 0px;
+    width: 300px;
+    height: 150px;
+}
+
+h1 {
+    margin: 0;
+}
+.center_align{
+    text-align: center;
+}
+.left_align{
+    text-align: left;
+}
+
+nav {
+    background-color: goldenrod;
+}
+
+.nav_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav_list li {
+    padding: 10px 20px;
+    width: 200px;
+    height: 20px;
+}
+
+.nav_list li a {
+    color: white;
+    text-decoration: none;
+}
+.nav_list li a:hover {
+    color: white;
+    text-decoration: none;
+    color: orangered;
+}
+
+.drop_down {
+    display: none;
+    position:absolute;
+    background-color: black;
+    opacity: 0.9;
+    list-style-type: none;
+}
+
+.nav_list li:hover .drop_down {
+    display: block;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(70,70,70,0.8);
+    color: white;
+    margin: 4px;
+}
+.rhino_content{
+    letter-spacing: 2px;
+    font-size:15px;
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    text-indent: 5px;
+}
+.rhino_image{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    align-self: center;
+}
+#rhino_img{
+    width:400px;
+    height:200px;
+    border:2px outset #ccc;
+    border-radius: 4px;
+}
+table,th,td,tr{
+    border: 1px solid gold;
+    border-collapse: collapse;
+    width:700px;
+}
+td{
+    text-align: center;
+}
+.table{
+    align-self: center;
+    height: 300px;
+}
+.hover_row:hover{
+    background-color: orange;
+    color: black;
+}
+th{
+    background-color: orangered;
+}

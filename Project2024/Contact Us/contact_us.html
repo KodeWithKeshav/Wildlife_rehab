@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-image: url(/Users/keshavs/Desktop/Project2024/background_pages.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    padding: 1px;
+}
+
+.head_content {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.image{
+    align-items: flex-start;
+}
+.content{
+    align-self:center;
+    padding-left: 200px;
+    color: orangered;
+}
+
+#logo {
+    margin-right: 0px;
+    width: 300px;
+    height: 150px;
+}
+
+h1 {
+    margin: 0;
+}
+.center_align{
+    text-align: center;
+}
+.left_align{
+    text-align: left;
+}
+
+nav {
+    background-color: goldenrod;
+}
+
+.nav_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav_list li {
+    padding: 10px 20px;
+    width: 200px;
+    height: 20px;
+}
+
+.nav_list li a {
+    color: white;
+    text-decoration: none;
+}
+.nav_list li a:hover {
+    color: white;
+    text-decoration: none;
+    color: orangered;
+}
+
+.drop_down {
+    display: none;
+    position:absolute;
+    background-color: black;
+    opacity: 0.9;
+    list-style-type: none;
+}
+
+.nav_list li:hover .drop_down {
+    display: block;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.format{
+    width: 35px;
+    height: 20px;
+    margin-right: 5px;
+}
+iframe{
+    width: 800px;
+    height: 500px;
+    border: 1px solid #ccc;
+}
+a{
+    text-decoration: none;
+}
+#add{
+    font-family: 'Courier New', Courier, monospace;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head_content">
+            <div class="image"><img src="/Users/keshavs/Desktop/Project2024/PICTURES/LOGO.png" title="LOGO" id="logo"></div>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav_list">
+            <li class="center_align"><a href="/Users/keshavs/Desktop/Project2024/HOME/Homepage.html">HOME</a></li>
+            <li class="center_align"><a>ABOUT US</a>
+                <ul class="drop_down">
+                    <li class="left_align"><a href="/Users/keshavs/Desktop/Project2024/NAV BAR/OUR BIG IDEAS/big_ideas.html">OUR BIG IDEAS</a></li>
+                    <li class="left_align"><a href="/Users/keshavs/Desktop/Project2024/NAV BAR/OUR TEAM/team_details.html">OUR TEAM</a></li>
+                    <li class="left_align"><a href="/Users/keshavs/Desktop/Project2024/NAV BAR/OUR FINANCIALS/financial.html">OUR FINANCIALS</a></li>
+                    <li class="left_align"><a href="/Users/keshavs/Desktop/Project2024/NAV BAR/OUR IMPACT/impact.html">OUR IMPACT</a></li>
+                </ul>
+            </li>
+            <li class="center_align"><a>OUR WORK</a>
+                <ul class="drop_down">
+                    <li class="left_align"><a href="/Users/keshavs/Desktop/Project2024/NAV BAR/OUR PROJECTS/our-projects.html">OUR PROJECTS</a></li>
+                    <li class="left_align"><a href="/Users/keshavs/Desktop/Project2024/NAV BAR/OUR MILESTONES/milestone.html">OUR MILESTONES</a></li>
+                    <li class="left_align"><a href="/Users/keshavs/Desktop/Project2024/NAV BAR/Media Center/mediacentre.html">MEDIA CENTER</a></li>
+                </ul>
+            </li> 
+            <li class="center_align"><a href="/Users/keshavs/Desktop/Project2024/VOLUNTEER FORM/volunteer.html">VOLUNTEER</a></li>
+            <li class="center_align"><a href="/Users/keshavs/Desktop/Project2024/NAV BAR/QUIZ/quiz.html">QuiZ</a></li>
+            <li class="center_align"><a href="/Users/keshavs/Desktop/Project2024/Contact Us/contact_us.html">CONTACT US</a></li>
+            <li class="center_align"><a href="/Users/keshavs/Desktop/Project2024/DONATE FORM/donate_form.html">DONATE</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="element1">
+            <h2>Wild Oasis</h2>
+            <p id="add">F-13, Sector 8<br>National Capital Region (NCR)<br>Noida 201301<br>India</p>
+            <p><img src="phone_icon.jpeg" class="format">&nbsp;&nbsp;+91-120-4143900</p>
+            <p><a href="mailto:wildoasis@gmail.com"><img src="mail_icon.jpeg" class="format" title="email"></a>&nbsp;&nbsp;<a href="mailto:wildoasis@gmail.com" target="_blank">wildoasis@gmail.com</a></p>
+            <p><a href="https://www.instagram.com/_.keshav1023.___?igsh=MWg3ZWo2czN1emF1Zg==" target="_blank"><img src="insta_icon.webp" title="instagram" class="format"></a>&nbsp;&nbsp;<a href="https://www.facebook.com/" title="facebook" target="_blank"><img src="face_icon.png" class="format"></a>&nbsp;&nbsp;<a href="https://x.com/?lang=en" target="_blank"><img src="twitter_icon.jpeg" title="twitter" class="format"></a></p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.652614563!2d-8.5488518!3d37.3065164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b2151cbc28d27%3A0x54c9d3de8bb997fc!2sWild%20Oasis%20-%20Algarve%2C%20Semedeiro%2C%20Monchique%2C%20Portugal!5e0!3m2!1sen!2suk!4v1635423456789!5m2!1sen!2suk" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</body>
+</html>

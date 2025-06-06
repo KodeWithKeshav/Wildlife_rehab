@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="Author" content="Keshav S">
+        <link rel="stylesheet" href="test_form1.css">
+    </head>
+    <body>
+        <h2>Volunteer Form</h2>
+            <hr>
+            <h3>We have many opportunities with various committees.  Once your information has been received, our Volunteer Coordinator will contact you.  Thank you for your support.</h3>
+            <form action="volunteer_form_submit.html" method="post" target="_self" enctype="multipart/form-data">
+                <label for="name"><b>Name</b></label><br><br>
+                <input type="text" placeholder="First" id="name" name="fname">&nbsp;&nbsp;
+                <input type="text" placeholder="Last" id="name" name="lname"><br><br>
+                <label for="gender"><b>Gender</b></label><br><br>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label><br><br>
+                <label for="address"><b>Address</b></label><br><br>
+                <input type="text" id="address" name="street line 1" placeholder="Street Address" class="long"><br><br>
+                <input type="text" id="address" name="street line 2" placeholder="Street Address Line 2" class="long"><br><br>
+                <input type="text" id="address" name="City" placeholder="City">&nbsp;&nbsp;
+                <input type="text" id="address" name="Region" placeholder="Region"><br><br>
+                <input type="text" id="address" name="Zip code" placeholder="Postal / Zip Code">&nbsp;&nbsp;
+                <input type="text" list="country" name="country" placeholder="Country">
+                <datalist id="country">
+                    <option valye="Select">-- Select a country --</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="UAE">United Arab Emirates</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="USA">United States</option>
+                    <option value="Vietnam">Vietnam</option>
+                </datalist><br><br>
+                <label for="email"><b>Email</b></label><br><br>
+                <input type="email" name="email" id="email" placeholder="Email" class="long"><br><br>
+                <label for="Other"><b>Are you involved with any other organization as a volunteer?</b></label><br><br>
+                <input type="radio" name="yes/no" value="yes" id="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" name="yes/no" value="no" id="no">
+                <label for="no">No</label><br><br>
+                <label for="preference"><b>Please select your preferred volunteer activites</b></label><br><br>
+                <input type="checkbox" name="rescue" value="rescue" id="rescue">
+                <label for="rescue">Rescue Missions</label><br>
+                <input type="checkbox" name="Blog" value="Blog" id="Blog">
+                <label for="Blog">Blog Writing</label><br>
+                <input type="checkbox" name="manage" value="manage" id="manage">
+                <label for="manage">Facility Management</label><br>
+                <input type="checkbox" name="campaign" value="campaign" id="campaign">
+                <label for="campaign">Campaign Activites</label><br>
+                <input type="checkbox" name="fund" value="fund" id="fund">
+                <label for="fund">Fund Raising</label><br>
+                <input type="checkbox" name="other" value="other" id="other">
+                <label for="other">Other</label><br><br>
+                <label for="About You"><b>Tell us about yourself</b></label><br><br>
+                <textarea cols="50" rows="10" name="about"></textarea><br><br>
+                <div id="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                </div>
+            </form>
+    </body>

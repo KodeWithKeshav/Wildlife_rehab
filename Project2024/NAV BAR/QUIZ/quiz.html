@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Keshav S">
+    <link rel="stylesheet" href="quiz_style.css">
+    <script type="text/javascript">
+        function validateFields(){
+            var check=0;
+            if(document.getElementById("q1").validity.valueMissing){
+                alert("Please answer question 1");
+                check+=1;
+            }
+            if(document.getElementById("q2").validity.valueMissing){
+                alert("Please answer question 2");
+                check+=1;
+            }
+            if(document.getElementById("q3").validity.valueMissing){
+                alert("Please answer question 3");
+                check+=1;
+            }
+            if(document.getElementById("q4").validity.valueMissing){
+                alert("Please answer question 4");
+                check+=1;
+            }
+            if(document.getElementById("q5").validity.valueMissing){
+                alert("Please answer question 5");
+                check+=1;
+            }
+            if(document.getElementById("q6").validity.valueMissing){
+                alert("Please answer question 6");
+                check+=1;
+            }
+            if(document.getElementById("q7").validity.valueMissing){
+                alert("Please answer question 7");
+                check+=1;
+            }
+            if(document.getElementById("q8").validity.valueMissing){
+                alert("Please answer question 8");
+                check+=1;
+            }
+            if(document.getElementById("q9").validity.valueMissing){
+                alert("Please answer question 9");
+                check+=1;
+            }
+            if(document.getElementById("q10").validity.valueMissing){
+                alert("Please answer question 10");
+                check+=1;
+            }
+            if(document.getElementById("q2").validity.rangeOverflow){
+                alert("Answer of question 2 is above the limit");
+                check+=1;
+            }
+            if(document.getElementById("q4").validity.rangeOverflow){
+                alert("Answer of question 4 is above the limit");
+                check+=1;
+            }
+            if(document.getElementById("q5").validity.rangeOverflow){
+                alert("Answer of question 5 is above the limit");
+                check+=1;
+            }
+            if(document.getElementById("q8").validity.rangeOverflow){
+                alert("Answer of question 8 is above the limit");
+                check+=1;
+            }
+            if(document.getElementById("q9").validity.rangeOverflow){
+                alert("Answer of question 9 is above the limit");
+                check+=1;
+            }
+            if(document.getElementById("q2").validity.rangeUnderflow){
+                alert("Answer of question 2 is below the limit..The answer can't be negative");
+                check+=1;
+            }
+            if(document.getElementById("q4").validity.rangeUnderflow){
+                alert("Answer of question 4 is below the limit..The answer can't be negative");
+                check+=1;
+            }
+            if(document.getElementById("q5").validity.rangeUnderflow){
+                alert("Answer of question 5 is below the limit..The answer can't be negative");
+                check+=1;
+            }
+            if(document.getElementById("q8").validity.rangeUnderflow){
+                alert("Answer of question 8 is below the limit..The answer can't be negative");
+                check+=1;
+            }
+            if(document.getElementById("q9").validity.rangeUnderflow){
+                alert("Answer of question 9 is below the limit..The answer can't be negative");
+                check+=1;
+            }
+            return check;
+        }
+        function quizCalculate(){
+            var c=validateFields();
+            if(c==0){
+                var marks=0;
+            var q1=document.getElementById("q1").value;
+            var q2=document.getElementById("q2").value;
+            var q3=document.getElementById("q3").value;
+            var q4=document.getElementById("q4").value;
+            var q5=document.getElementById("q5").value;
+            var q6=document.getElementById("q6").value;
+            var q7=document.getElementById("q7").value;
+            var q8=document.getElementById("q8").value;
+            var q9=document.getElementById("q9").value;
+            var q10=document.getElementById("q10").value;
+            if(q1.toLowerCase()=="sloth"){
+                marks+=1;
+            }
+            if(q2==3){
+                marks+=1;
+            }
+            if(q3.toLowerCase()=="giraffe"){
+                marks+=1;
+            }
+            if(q4==5){
+                marks+=1;
+            }
+            if(q5==3){
+                marks+=1;
+            }
+            if(q6.toLowerCase()=="keratin"){
+                marks+=1;
+            }
+            if(q7.toLowerCase()=="head"){
+                marks+=1;
+            }
+            if(q8==4){
+                marks+=1;
+            }
+            if(q9==0){
+                marks+=1;
+            }
+            if(q10.toLowerCase()=="bat"){
+                marks+=1;
+            }
+            if(marks<5){
+                alert("Oops!You have scored "+marks+" out of 10..Don't worry you can try again");
+            }
+            if(marks>5&&marks<10){
+                alert("Good job !!You have scored "+marks+" out of 10..");
+            }
+            if(marks==10){
+                alert("Awesome!! You have scored "+marks+" out of 10");
+            }
+            }
+        }
+        function onReset(){
+            alert("The form is reset!!");
+        }
+        function onCancel(){
+            window.history.back();
+        }
+        function onFocus(input){
+            input.style.background="black"
+            input.style.color="white";
+        }
+        function onBlur(input){
+            input.style.background="beige"
+            input.style.color="orangered";
+        }
+    </script>
+</head>
+<body>
+    <h2>WildLife Quiz</h2>
+    <hr>
+    <form action="/Users/keshavs/Desktop/Project2024/HOME/Homepage.html">
+        <label for="q1">1.What is the slowest animal in the world?</label><br>
+        <input type="text" id="q1" placeholder="Answer" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+        <label for="q2">2.How many years can a snail sleep for?</label><br>
+        <input type="number" id="q2" placeholder="Answer" min="0" max="10" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+        <label for="q3">3.Which mammal has no vocal cords?</label><br>
+        <input type="text" id="q3" placeholder="Answer" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+        <label for="q4">4.How many eyes does a honeybee have?</label><br>
+        <input type="number" id="q4" placeholder="Answer" min="0" max="10" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+        <label for="q5">5.How many hearts does an octopus have?</label><br>
+        <input type="number" id="q5" placeholder="Answer" min="0" max="10" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+        <label for="q6">6.What is a rhino's horn made out of?</label><br>
+        <input type="text" id="q6" placeholder="Answer" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+        <label for="q7">7.Where is a shrimp's heart located?</label><br>
+        <input type="text" id="q7" placeholder="Answer" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+        <label for="q8">8.How many compartments does a cow’s stomach have?</label><br>
+        <input type="number" id="q8" placeholder="Answer" min="0" max="10" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+        <label for="q9">9.How many bones does a shark have?</label><br>
+        <input type="number" id="q9" placeholder="Answer" min="0" max="10" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+        <label for="q10">10.What is the only mammal that can fly?</label><br>
+        <input type="text" id="q10" placeholder="Answer" onfocus="onFocus(this)" onblur="onBlur(this)" required><br>
+        <input type="submit" onclick="quizCalculate()">
+        <input type="reset" onclick="onReset()">
+        <input type="button" value="Cancel" onclick="onCancel()">
+    </form>
+</body>

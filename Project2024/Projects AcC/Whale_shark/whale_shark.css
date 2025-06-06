@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/Users/keshavs/Desktop/Project2024/PICTURES/Projects/whaleshark_bgp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: lightseagreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    padding: 1px;
+}
+
+.head_content {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.image{
+    align-items: flex-start;
+}
+.content{
+    align-self:center;
+    padding-left: 100px;
+    color: white;
+}
+
+#logo {
+    margin-right: 0px;
+    width: 300px;
+    height: 150px;
+}
+
+h1 {
+    margin: 0;
+}
+.center_align{
+    text-align: center;
+}
+.left_align{
+    text-align: left;
+}
+
+nav {
+    background-color: goldenrod;
+}
+
+.nav_list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav_list li {
+    padding: 10px 20px;
+    width: 200px;
+    height: 20px;
+}
+
+.nav_list li a {
+    color: white;
+    text-decoration: none;
+}
+.nav_list li a:hover {
+    color: white;
+    text-decoration: none;
+    color: orangered;
+}
+
+.drop_down {
+    display: none;
+    position:absolute;
+    background-color: black;
+    opacity: 0.9;
+    list-style-type: none;
+}
+
+.nav_list li:hover .drop_down {
+    display: block;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+.main{
+    background-color: rgba(70,70,70,0.8);
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 80%;
+    text-align: justify;
+    border: 1px solid #ccc;
+    letter-spacing: 1px;
+    align-self: center;
+}
+.project{
+    border:1px solid #ccc;
+    margin-top:10px;
+    text-align: justify;
+    width: 80%;
+    background-color: rgba(70,70,70,0.8);
+    border-radius: 5px;
+    align-self: center;
+    letter-spacing: 1px;
+}
+h3{
+    text-align: center;
+    color: aqua;
+}
+.row_1{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 3;
+    margin-top: 10px;
+}
+.documentation{
+    width: 40%;
+    border: 1px solid #ccc;
+    background-color:rgba(70,70,70,0.8);
+    border-radius: 5px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.identification{
+    width: 40%;
+    border:1px solid #ccc;
+    background-color: rgba(70,70,70,0.8);
+    border-radius: 5px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.row_2{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 3;
+    margin-top: 10px;
+    height: 300px;
+}
+.whale_pups{
+    width: 40%;
+    border: 1px solid #ccc;
+    background-color:rgba(70,70,70,0.8);
+    border-radius: 5px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.iframe{
+    width: 40%;
+    border:1px solid #ccc;
+    background-color: rgba(70,70,70,0.8);
+    border-radius: 5px;
+}
+iframe{
+    width:100%;
+    height: 100%;
+}
+.row_3{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 3;
+    margin-top: 10px;
+}
+.genetic{
+    width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:rgba(70,70,70,0.8);
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.sattelite{
+    width: 40%;
+    border:1px solid #ccc;
+    background-color: rgba(70,70,70,0.8);
+    border-radius: 5px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+.tourism{
+    align-self: center;
+    border: 1px solid #ccc;
+    background-color: rgba(70,70,70,0.8);
+    border-radius: 5px;
+    width:40%;
+    letter-spacing: 1px;
+    margin: 10px;
+}

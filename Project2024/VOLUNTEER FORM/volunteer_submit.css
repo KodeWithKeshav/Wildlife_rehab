@@ -1,0 +1,17 @@
+img{
+    width:200px;
+    height:200px;
+}
+#parent{
+    display: -ms-flexbox;
+    margin: 0 200px;
+    padding-top: 100px;
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+}
+p{
+    font-size: 40px;
+}
+body{
+    background-color:rgba(10,10,10,0.6);
+}

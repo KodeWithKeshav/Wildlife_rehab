@@ -1,0 +1,19 @@
+{
+  "name": "project2024",
+  "version": "1.0.0",
+  "main": "home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^30.0.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "electron-packager": "^17.1.2"
+  }
+}
